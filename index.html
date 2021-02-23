@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Eventbrite UI Kit</title>
+  </head>
+  <body>
+    <div class="bs-component">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Eventbrite UI Kit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Présentation du kit</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#navbar-eventbrite">Navbar</a>
+                <a class="dropdown-item" href="#footer-eventbrite">Footer</a>
+                <a class="dropdown-item" href="#forms-eventbrite">Formulaires</a>
+                <a class="dropdown-item" href="#banners-eventbrite">Bannières</a>
+                <a class="dropdown-item" href="#cards-eventbrite">Cartes</a>
+                <a class="dropdown-item" href="#comments-eventbrite">Commentaires</a>
+                <a class="dropdown-item" href="#resources-eventbrite">Présentation ressource</a>
+                <a class="dropdown-item" href="#elements-eventbrite">Présentation élément</a>
+                <a class="dropdown-item" href="#">Element personnalisé : </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Exemples de pages</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="pages/homepage.html">Page d'accueil</a>
+                <a class="dropdown-item" href="pages/login.html">Page de login</a>
+                <a class="dropdown-item" href="pages/show_event.html">Page de ressource</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container py-5">
+      <h1>Présentation des atomes</h1>
+      <br>
+      <h2 id="navbar-eventbrite">Navbar</h2>
+      <br>
+      <div class="bs-component">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <a class="navbar-brand" href="#">Eventbrite</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Créer un événement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nous contacter</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav my-2 my-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Connexion</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Se connecter</a>
+                  <a class="dropdown-item" href="#">S'inscrire</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <br>
+      <h2 id="footer-eventbrite">Footer</h2>
+      <br>
+      <footer class="bg-primary text-light">
+        <div class="p-3 text-center">
+          &#169; Ariane, The Hacking Project et Bootstrap, 2021
+        </div>
+      </footer>
+      <br>
+      <h2 id="forms-eventbrite">Formulaires</h2>
+      <h3>Inscription</h3>
+      <br>
+      <form class="col-6 mx-auto">
+        <fieldset>
+          <legend class="h4">S'inscrire</legend>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Votre adresse e-mail</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Adresse e-mail">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Votre mot de passe</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+            <small id="passwordHelp" class="form-text text-muted">Minimum 6 caractères dont une majuscule</small>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">S'inscrire</button>
+        </fieldset>
+        <div class="text-center pt-2"><a href="#">Se connecter</a></div>
+        <div class="float-lg-right"><a href="#">Retour à l'accueil</a></div>
+      </form>
+      <br>
+      <h3>Connexion</h3>
+      <br>
+      <form class="col-6 mx-auto">
+        <fieldset>
+          <legend class="h4">Se connecter</legend>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Votre adresse e-mail</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Adresse e-mail">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Votre mot de passe</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+            <label class="custom-control-label" for="customCheck1">Se souvenir de moi</label>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary btn-block">Se connecter</button>
+        </fieldset>
+        <div class="text-center pt-2"><a href="#">S'inscrire</a></div>
+        <div class="float-lg-right"><a href="#">Retour à l'accueil</a></div>
+      </form>
+      <br>
+      <h3>Mot de passe oublié</h3>
+      <br>
+      <form class="col-6 mx-auto">
+        <fieldset>
+          <legend class="h4">Mot de passe oublié ?</legend>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Votre adresse e-mail</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Adresse e-mail">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Réinitialiser mon mot de passe</button>
+        </fieldset>
+        <div class="float-lg-right pt-2"><a href="#">Retour à l'accueil</a></div>
+      </form>
+      <br>
+      <h3>Changement de mot de passe</h3>
+      <br>
+      <form class="col-6 mx-auto">
+        <fieldset>
+          <legend class="h4">Réinitialiser mon mot de passe</legend>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Votre nouveau mot de passe</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+            <small id="passwordHelp" class="form-text text-muted">Minimum 6 caractères dont une majuscule</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Confirmer votre mot de passe</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Réinitialiser mon mot de passe</button>
+        </fieldset>
+        <div class="float-lg-right pt-2"><a href="#">Retour à l'accueil</a></div>
+      </form>
+      <br>
+      <h2 id="banners-eventbrite">Bannières</h2>
+      <h3>Page d'accueil</h3>
+      <br>
+      <div class="jumbotron" style="height:600px; background-image: url('https://wallpapershome.com/images/pages/pic_h/2028.jpg')">
+        <div class="overlay"></div>
+        <div class="inner text-right p-5 mt-5">
+          <h1 class="text-light">Bienvenue sur le digne héritier d'Eventbrite !</h1>
+          <p class="text-light">Eventbrite Lite est un site qui permet de s'inscrire à des événements divers et variés dans ta ville.</p>
+          <a href="#" class="btn btn-primary">Voir la liste des événements</a>
+        </div>
+      </div>
+      <br>
+      <h3>Page d'événement</h3>
+      <br>
+      <div class="jumbotron" style="height:300px; background-image: url('https://wallpapershome.com/images/pages/pic_h/12115.jpg')">
+        <div class="overlay"></div>
+        <div class="inner text-center">
+          <h1 class="text-light">Cours de cuisine italienne</h1>
+          <h5 class="text-light">Le 15/03/2021 à 15h, Sofitel Lyon</h5>
+          <a href="#" class="btn btn-success btn-lg">S'inscrire</a>
+        </div>
+      </div>
+      <br>
+      <h2 id="cards-eventbrite">Cartes de présentation</h2>
+      <h3>Cartes individuelles</h3>
+      <br>
+      <h5>Carte événement</h5>
+      <br>
+      <div class="col-6 mx-auto">
+        <div class="card text-white bg-primary mx-auto" style="max-width: 20rem;">
+          <h5 class="card-header">Cours de cuisine italienne</h5>
+          <img class="d-block user-select-none" style="width: 100%; max-height: 200px;" src="https://wallpapershome.com/images/pages/pic_h/12115.jpg">
+          <div class="card-body">
+            <h4 class="card-title">Le 15/03/2021 à 15h, Sofitel Lyon</h4>
+            <p class="card-text">Organisé par Roberta</p>
+          </div>
+          <div class="card-body text-right">
+            <a href="#" class="btn btn-success">S'inscrire</a>
+          </div>
+        </div>
+      </div>
+      <br>        
+      <h5>Carte ville</h5>
+      <br>
+      <div class="col-6 mx-auto">
+        <div class="card mb-3 bg-secondary text-white mx-auto" style="max-width: 30rem;">
+          <h3 class="card-header">Lyon</h3>
+          <img class="d-block user-select-none" style="width: 100%; max-height: 200px;" src="https://static.lexpress.fr/medias_11552/w_1888%2Ch_1056%2Cc_crop%2Cx_154%2Cy_157/w_640%2Ch_360%2Cc_fill%2Cg_north/v1548771652/vue-de-lyon-depuis-la-saone-au-crepuscule_5914924.jpg">
+          <div class="card-body">
+            <p class="card-text">31 150 utilisateurs inscrits dans cette ville
+              <br>2 541 événements organisés dans cette ville
+            </p>
+          </div>
+          <div class="card-body text-right">
+            <a href="#" class="btn btn-primary">Voir tous les événements dans cette ville</a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h5>Carte utilisateur</h5>
+      <br>
+      <div class="col-8 mx-auto">
+        <div class="card border-primary" style="width:40rem;">
+          <div class="row no-gutters">
+            <div class="col-md-1">
+              <img src="https://www.alchinlong.com/wp-content/uploads/2015/09/sample-profile.png" class="m-3" style="width: 50px; height: 50px;">
+            </div>
+            <div class="col-lg-11">
+              <div class="card-body">
+                <h6 class="card-subtitle text-muted">Prénom Nom</h6>
+                <p class="card-text small">Une description. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h3>Ensembles de cartes</h3>
+      <br>
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="card text-white bg-primary m-3" style="max-width: 20rem;">
+          <h5 class="card-header">Cours de cuisine italienne</h5>
+          <img class="d-block user-select-none" style="width: 100%; max-height: 200px;" src="https://wallpapershome.com/images/pages/pic_h/12115.jpg">
+          <div class="card-body">
+            <h4 class="card-title">Le 15/03/2021 à 15h, Sofitel Lyon</h4>
+            <p class="card-text">Organisé par Roberta</p>
+          </div>
+          <div class="card-body text-right">
+            <a href="#" class="btn btn-success">S'inscrire</a>
+          </div>
+        </div>
+        <div class="card text-white bg-secondary m-3" style="max-width: 20rem;">
+          <h5 class="card-header">Cours de cuisine italienne</h5>
+          <img class="d-block user-select-none" style="width: 100%; max-height: 200px;" src="https://wallpapershome.com/images/pages/pic_h/12115.jpg">
+          <div class="card-body">
+            <h4 class="card-title">Le 15/03/2021 à 15h, Sofitel Lyon</h4>
+            <p class="card-text">Organisé par Roberta</p>
+          </div>
+          <div class="card-body text-right">
+            <a href="#" class="btn btn-success">S'inscrire</a>
+          </div>
+        </div>
+        <div class="card text-white bg-primary m-3" style="max-width: 20rem;">
+          <h5 class="card-header">Cours de cuisine italienne</h5>
+          <img class="d-block user-select-none" style="width: 100%; max-height: 200px;" src="https://wallpapershome.com/images/pages/pic_h/12115.jpg">
+          <div class="card-body">
+            <h4 class="card-title">Le 15/03/2021 à 15h, Sofitel Lyon</h4>
+            <p class="card-text">Organisé par Roberta</p>
+          </div>
+          <div class="card-body text-right">
+            <a href="#" class="btn btn-success">S'inscrire</a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h2 id="comments-eventbrite">Commentaires</h2>
+      <h3>Commentaires individuels</h3>
+      <br>
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="card border-left-0 border-right-0 rounded-0 mx-auto" style="width:40rem;">
+          <div class="row no-gutters">
+            <div class="col-md-1">
+              <img src="https://www.alchinlong.com/wp-content/uploads/2015/09/sample-profile.png" class="m-3" style="width: 50px; height: 50px;">
+            </div>
+            <div class="col-md-11">
+              <div class="card-body pb-0">
+                <h6 class="card-subtitle text-muted">Prénom Nom</h6>
+                <p class="card-text small">Ce site n'est vraiment pas ouf...</p>
+              </div>
+              <div class="small font-italic text-right mt-0">
+                <span>Le 22 février à 15h30</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h3>Ensembles de commentaires et formulaire d'ajout</h3>
+      <br>
+      <div class="col-8 mx-auto">
+        <form class="pb-4" style="max-width:40rem;">
+          <fieldset>
+            <legend class="h4">Ajouter un commentaire</legend>
+            <div class="form-group">
+              <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Votre texte ici..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </fieldset>
+        </form>
+        <h4>Commentaires</h4>
+        <div class="d-flex flex-wrap justify-content-center">
+          <div class="card border-left-0 border-right-0 rounded-0" style="width:40rem;">
+            <div class="row no-gutters">
+              <div class="col-md-1">
+                <img src="https://www.alchinlong.com/wp-content/uploads/2015/09/sample-profile.png" class="m-3" style="width: 50px; height: 50px;">
+              </div>
+              <div class="col-md-11">
+                <div class="card-body pb-0">
+                  <h6 class="card-subtitle text-muted">Prénom Nom</h6>
+                  <p class="card-text small">Ce site n'est vraiment pas ouf...</p>
+                </div>
+                <div class="small font-italic text-right mt-0">
+                  <span>Le 22 février à 15h30</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-left-0 border-right-0 rounded-0" style="width:40rem;">
+            <div class="row no-gutters">
+              <div class="col-md-1">
+                <img src="https://www.alchinlong.com/wp-content/uploads/2015/09/sample-profile.png" class="m-3" style="width: 50px; height: 50px;">
+              </div>
+              <div class="col-md-11">
+                <div class="card-body pb-0">
+                  <h6 class="card-subtitle text-muted">Prénom Nom</h6>
+                  <p class="card-text small">Nul !</p>
+                </div>
+                <div class="small font-italic text-right mt-0">
+                  <span>Le 25 février à 16h30</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-left-0 border-right-0 rounded-0" style="width:40rem;">
+            <div class="row no-gutters">
+              <div class="col-md-1">
+                <img src="https://www.alchinlong.com/wp-content/uploads/2015/09/sample-profile.png" class="m-3" style="width: 50px; height: 50px;">
+              </div>
+              <div class="col-md-11">
+                <div class="card-body pb-0">
+                  <h6 class="card-subtitle text-muted">Prénom Nom</h6>
+                  <p class="card-text small">Le meilleur site que j'ai vu de ma vie wlh</p>
+                </div>
+                <div class="small font-italic text-right mt-0">
+                  <span>Le 20 février à 04h37</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h2 id="resources-eventbrite">Présentation ressource</h2>
+      <h3>Présentation d'un événement</h3>
+      <br>
+      <div class="row border p-3">
+        <div class="col-6">
+          <h3>Description de l'événement</h3>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-6">
+          <h3>Informations pratiques</h3>
+          <table class="table table-hover">
+            <tbody>
+              <tr>
+                <th scope="row">Date et heure de l'événement</th>
+                <td>Le 15/03/2021 à 15h</td>
+              </tr>
+              <tr class="table-primary">
+                <th scope="row">Lieu de l'événement</th>
+                <td>Sofitel Lyon</td>
+              </tr>
+              <tr>
+                <th scope="row">Tarif</th>
+                <td>40 euros</td>
+              </tr>
+              <tr class="table-primary">
+                <th scope="row">Précisions de l'organisateur</th>
+                <td>Pensez à apporter votre propre pâte à pizza.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <br>
+      <h2 id="elements-eventbrite">Présentation d'un élément</h2>
+      <br>
+      <div class="row row-grid justify-content-around align-items-center border p-3">
+        <div class="col-lg-5 order-lg-2">
+          <div class=" pr-lg-4">
+            <h5 class=" h3">Découvrez nos incroyables événements.</h5>
+            <p class="lead mt-4 mb-5 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="#" class="link link-underline-primary">En savoir plus</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <img alt="Image placeholder" src="https://wallpapershome.com/images/pages/pic_h/2028.jpg" class="img-fluid img-center">
+        </div>
+      </div>
+      <br>
+      <div class="row row-grid justify-content-around align-items-center border p-3">
+        <div class="col-lg-5 order-lg-1">
+          <div class=" pr-lg-4">
+            <h5 class=" h3">Découvrez nos incroyables événements.</h5>
+            <p class="lead mt-4 mb-5 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="#" class="link link-underline-primary">En savoir plus</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-2">
+          <img alt="Image placeholder" src="https://wallpapershome.com/images/pages/pic_h/2028.jpg" class="img-fluid img-center">
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
