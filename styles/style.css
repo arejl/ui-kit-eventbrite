@@ -5010,6 +5010,17 @@ input[type="button"].btn-block {
   margin-bottom: -1px;
 }
 
+.accordion .card-header[aria-expanded="false"]::after {
+  content: '+';
+}
+
+.accordion .card-header::after {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .breadcrumb {
   display: -ms-flexbox;
   display: flex;
