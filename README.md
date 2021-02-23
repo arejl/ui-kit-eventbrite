@@ -7,4 +7,6 @@ Les exemples de pages disponibles sont :
 * La page de connexion
 * Une page d'événement.
 
+Le dossier ``pages/single_elements`` contient les atomes individuels qui sont également visibles sur la page index, comme demandé dans la consigne (?)
+
 Pour revenir à la présentation du kit UI depuis le site Eventbrite, cliquer sur "Eventbrite" dans la navbar.
